@@ -1,0 +1,12 @@
+.navbar {
+	margin: 0;
+	width: 100%;
+	position: sticky;
+	top: 0;
+	padding: 20px;
+	background-color: aliceblue;
+	border-radius: 0 0 10px 10px;
+	display: grid;
+	grid-template-columns: 1fr auto;
+	align-items: center;
+}

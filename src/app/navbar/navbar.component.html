@@ -1,0 +1,9 @@
+<div class="navbar">
+	<h2>Logo</h2>
+	<ul>
+		<a *ngIf="auth" routerLink="/owner" routerLinkActive="active"><li>Dueños</li></a>
+		<a *ngIf="auth" routerLink="/petTypes" routerLinkActive="active"><li>PetTypes</li></a>
+		<a *ngIf="auth" routerLink="/login" routerLinkActive="active" (click)="logout()"><li>Logout</li></a>
+		<a *ngIf="!auth" routerLink="/login" routerLinkActive="active"><li>Login</li></a>
+	</ul>
+</div>

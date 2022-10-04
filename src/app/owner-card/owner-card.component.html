@@ -1,0 +1,13 @@
+<div class="ownerCard">
+	<div class="header">
+		<p class="column-0">{{owner.firstName}} {{owner.lastName}}</p>
+		<p class="text-right column-1"><small>{{owner.address}} ({{owner.city}})</small></p>
+		<p class="underline text-center mb-1 column-0-1">Mascotas</p>
+	</div>
+	<ul>
+		<li *ngFor="let pet of owner.pets">
+			<p class="text-center">{{pet.name}} ({{pet.type.name}})</p>
+			<button (click)="borrarPet(pet.id)" title="borrar mascota">x</button>
+		</li>
+	</ul>
+</div>

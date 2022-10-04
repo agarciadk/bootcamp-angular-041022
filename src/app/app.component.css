@@ -1,0 +1,23 @@
+.wrapper {
+	height: 100vh;
+	display: grid;
+	grid-template-rows: 1fr auto 1fr;
+	gap: 20px;
+	grid-template-areas: 
+		"header"
+		"main"
+		"footer";
+}
+nav {
+	grid-area: header;
+}
+main {
+	grid-area: main;
+	width: 100%;
+	max-width: 1048px;
+	margin: 0 auto;
+}
+footer {
+	grid-area: footer;
+	align-self: end;
+}

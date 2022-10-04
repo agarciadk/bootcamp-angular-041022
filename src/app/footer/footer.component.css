@@ -1,0 +1,10 @@
+.footer {
+	margin: 0;
+	width: 100%;
+	position: sticky;
+	bottom: 0;
+	padding: 20px;
+	background-color: aliceblue;
+	border-radius: 10px 10px 0 0;
+	text-align: center;
+}

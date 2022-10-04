@@ -1,0 +1,22 @@
+<div class="card">
+	<h2>Tipos de mascotas</h2>
+	<ul>
+		<li *ngFor="let petType of petTypes">
+			<p>{{petType.id}} - {{petType.name}}</p>
+			<button
+			 	class="btn-remove"
+				(click)="delete(petType.id)"
+			>
+				X
+			</button>
+		</li>
+	</ul>
+	<div class="inputs">
+		<input
+			type="text"
+			[(ngModel)]="name"
+			placeholder="Tipo de mascota"
+		/>
+		<button (click)="addPetType()">Crear</button>
+	</div>
+</div>

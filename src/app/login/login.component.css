@@ -1,0 +1,21 @@
+.wrapper {
+	margin: 0 auto;
+	max-width: 400px;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	background: #fff;
+	border-radius: 15px;
+	align-self: center;
+}
+
+h2 {
+	text-align: center;
+}
+h2::after {
+	content: "🔐";
+	display: block;
+	font-size: 2rem;
+	margin-bottom: 10px;
+}
